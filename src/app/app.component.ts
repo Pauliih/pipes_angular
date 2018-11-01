@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { promise } from 'protractor';
+import { reject } from 'q';
 
 @Component({
   selector: 'app-root',
@@ -24,5 +26,8 @@ export class AppComponent {
       calle: "Primera",
       casa: 19
     }
-  }
+  };
+  valorDePromesa = new Promise( (resolve,reject)=>{
+    setTimeout(()=> resolve("Llegó la data!"), 3500);
+  })
 }
