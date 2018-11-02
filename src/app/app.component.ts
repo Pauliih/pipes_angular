@@ -34,5 +34,5 @@ export class AppComponent {
 
   fecha: Date = new Date();
   video: String = 'kkLk2XWMBf8';
-
+  activar: boolean = true;
 }

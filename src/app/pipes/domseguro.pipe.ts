@@ -4,6 +4,8 @@ import { DomSanitizer } from '@angular/platform-browser';
 @Pipe({
   name: 'domseguro'
 })
+
+// Este pipe elimina el error por url insegura
 export class DomseguroPipe implements PipeTransform {
 
   constructor( private domSanitizer: DomSanitizer){ }
