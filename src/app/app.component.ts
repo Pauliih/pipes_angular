@@ -32,5 +32,7 @@ export class AppComponent {
     setTimeout(()=> resolve("Llegó la data!"), 3500);
   });
 
-  fecha = new Date();
+  fecha: Date = new Date();
+  video: String = 'kkLk2XWMBf8';
+
 }
