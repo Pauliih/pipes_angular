@@ -10,6 +10,7 @@ import { reject } from 'q';
 export class AppComponent {
   title = 'Pipes';
   nombre: String = 'Paula';
+  nombre2: String = 'Paula KateriNne cAmpoS caMPos';
   arreglo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
   PI: number = Math.PI;

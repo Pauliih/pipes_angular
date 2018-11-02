@@ -5,16 +5,18 @@ import { AppComponent } from './app.component';
 // Fecha en español
 import localeEs from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
+import { CapitalizadoPipe } from './pipes/capitalizado.pipe';
 registerLocaleData(localeEs);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CapitalizadoPipe
   ],
   imports: [
     BrowserModule
   ],
-  providers: [{ provide: LOCALE_ID, useValue: 'es' }],
+  providers: [{ provide: LOCALE_ID, useValue: 'es' } ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
